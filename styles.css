@@ -26,6 +26,23 @@ body {
   line-height: 1.6;
 }
 
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -50px;
+  z-index: 999;
+  background: #e7f9ff;
+  color: #032337;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
 img {
   width: 100%;
   display: block;
@@ -86,6 +103,12 @@ a {
   color: #fff;
 }
 
+.nav-links a.active {
+  color: #fff;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.15rem;
+}
+
 .menu-toggle {
   display: none;
   background: transparent;
@@ -117,6 +140,21 @@ a {
   border-radius: 50%;
   box-shadow: 0 0 22px rgba(116, 230, 255, 0.7);
   animation: drift 13s infinite ease-in-out;
+}
+
+.hero::after {
+  box-shadow: 0 0 22px rgba(116, 230, 255, 0.7), 0 0 0 9999px transparent;
+}
+
+.hero-content::before {
+  content: '';
+  position: absolute;
+  right: 12%;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(136, 241, 255, 0), rgba(136, 241, 255, 0.85), rgba(136, 241, 255, 0));
+  opacity: 0.35;
 }
 
 .hero::before {
@@ -197,6 +235,13 @@ h1 {
 .btn.secondary {
   color: #d8f7ff;
   border-color: rgba(165, 226, 255, 0.5);
+}
+
+.btn:focus-visible,
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
 }
 
 .glass {
@@ -472,5 +517,19 @@ blockquote {
 
   .india-layout {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  .section > .container,
+  .section.container {
+    opacity: 1;
+    transform: none;
   }
 }

@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header" id="top">
-      <nav class="nav container">
+      <nav class="nav container" aria-label="Primary navigation">
         <a class="brand" href="#top">WHERE DOES PLASTIC GO?</a>
         <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <ul class="nav-links">
@@ -34,7 +35,7 @@
       </nav>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero cinematic-panel">
         <div class="hero-overlay"></div>
         <div class="hero-content container">
@@ -66,12 +67,18 @@
           <article class="stat-card glass">
             <h3>19–23 million tonnes / year</h3>
             <p>Estimated plastic waste entering aquatic ecosystems globally each year.</p>
-            <small>Source: UNEP, From Pollution to Solution (2021)</small>
+            <small>
+              Source: UNEP, From Pollution to Solution (2021) —
+              <a href="https://www.unep.org/resources/pollution-solution-global-assessment-marine-litter-and-plastic-pollution" target="_blank" rel="noopener">view report</a>
+            </small>
           </article>
           <article class="stat-card glass">
             <h3>~11 million tonnes / year</h3>
             <p>Plastic estimated to enter the ocean annually under current trends.</p>
-            <small>Source: UNEP, Drowning in Plastics report summary (2021)</small>
+            <small>
+              Source: UNEP assessment brief (2021) —
+              <a href="https://www.unep.org/news-and-stories/press-release/comprehensive-assessment-marine-litter-and-plastic-pollution" target="_blank" rel="noopener">view summary</a>
+            </small>
           </article>
           <article class="stat-card glass">
             <h3>9% (2019)</h3>
@@ -107,9 +114,9 @@
             and maritime activities.
           </p>
           <div class="image-strip">
-            <img src="https://images.unsplash.com/photo-1571677246347-5040036b95cc?auto=format&fit=crop&w=1200&q=80" alt="Plastic in water channel" />
-            <img src="https://images.unsplash.com/photo-1618477202872-815c98f40d14?auto=format&fit=crop&w=1200&q=80" alt="River carrying debris" />
-            <img src="https://images.unsplash.com/photo-1484291470158-b8f8d608850d?auto=format&fit=crop&w=1200&q=80" alt="Marine debris near coast" />
+            <img loading="lazy" src="https://images.unsplash.com/photo-1571677246347-5040036b95cc?auto=format&fit=crop&w=1200&q=80" alt="Plastic in water channel" />
+            <img loading="lazy" src="https://images.unsplash.com/photo-1618477202872-815c98f40d14?auto=format&fit=crop&w=1200&q=80" alt="River carrying debris" />
+            <img loading="lazy" src="https://images.unsplash.com/photo-1484291470158-b8f8d608850d?auto=format&fit=crop&w=1200&q=80" alt="Marine debris near coast" />
           </div>
         </div>
       </section>
@@ -170,6 +177,7 @@
           </p>
           <img
             class="wide-image"
+            loading="lazy"
             src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=1400&q=80"
             alt="Laboratory research on environmental samples"
           />
@@ -199,10 +207,12 @@
           <div class="india-visual glass">
             <img
               class="india-map"
+              loading="lazy"
               src="https://upload.wikimedia.org/wikipedia/commons/4/41/India_map-en.svg"
               alt="Map of India"
             />
             <img
+              loading="lazy"
               src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80"
               alt="Indian river with pollution pressure"
             />
@@ -250,15 +260,15 @@
         <div class="container">
           <h2>From AI Visualization to Real-World Evidence</h2>
           <div class="gallery-grid">
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=800&q=80" alt="Plastic waste dump" /><figcaption>Plastic waste dump showing poor disposal practices.</figcaption></figure>
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=800&q=80" alt="Plastic in flowing water" /><figcaption>Plastic carried through flowing water channels.</figcaption></figure>
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1591025207163-942350e47db2?auto=format&fit=crop&w=800&q=80" alt="Turtle underwater" /><figcaption>Aquatic wildlife exposed to polluted habitats.</figcaption></figure>
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=800&q=80" alt="Indian river pollution" /><figcaption>Indian river systems under solid waste pressure.</figcaption></figure>
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1618477462146-050d276eb449?auto=format&fit=crop&w=800&q=80" alt="Plastic sorting" /><figcaption>Sorting and recovery for recyclable material.</figcaption></figure>
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=800&q=80" alt="Beach cleanup" /><figcaption>Community cleanup actions at shoreline sites.</figcaption></figure>
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80" alt="Laboratory research" /><figcaption>Laboratory analysis supporting microplastic research.</figcaption></figure>
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Ghost fishing risk" /><figcaption>Marine gear losses and ghost-fishing risk contexts.</figcaption></figure>
-            <figure class="glass"><img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=800&q=80" alt="Plastic floating on water" /><figcaption>Floating plastic debris in freshwater/coastal waters.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=800&q=80" alt="Plastic waste dump" /><figcaption>Plastic waste dump showing poor disposal practices.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=800&q=80" alt="Plastic in flowing water" /><figcaption>Plastic carried through flowing water channels.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1591025207163-942350e47db2?auto=format&fit=crop&w=800&q=80" alt="Turtle underwater" /><figcaption>Aquatic wildlife exposed to polluted habitats.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=800&q=80" alt="Indian river pollution" /><figcaption>Indian river systems under solid waste pressure.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1618477462146-050d276eb449?auto=format&fit=crop&w=800&q=80" alt="Plastic sorting" /><figcaption>Sorting and recovery for recyclable material.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1569163139394-de4798aa62b6?auto=format&fit=crop&w=800&q=80" alt="Beach cleanup" /><figcaption>Community cleanup actions at shoreline sites.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80" alt="Laboratory research" /><figcaption>Laboratory analysis supporting microplastic research.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Ghost fishing risk" /><figcaption>Marine gear losses and ghost-fishing risk contexts.</figcaption></figure>
+            <figure class="glass"><img loading="lazy" src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?auto=format&fit=crop&w=800&q=80" alt="Plastic floating on water" /><figcaption>Floating plastic debris in freshwater/coastal waters.</figcaption></figure>
           </div>
         </div>
       </section>
